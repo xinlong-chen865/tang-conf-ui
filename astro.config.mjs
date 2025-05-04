@@ -4,9 +4,10 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import icon from "astro-icon";
 import react from "@astrojs/react";
+import svelte from '@astrojs/svelte';
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://astroship.web3templates.com",
-  integrations: [tailwind(), mdx(), sitemap(), icon(), react()]
+  integrations: [tailwind(), mdx(), sitemap(), icon(), react(), svelte({ extensions: ['.svelte'] })]
 });

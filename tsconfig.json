@@ -16,6 +16,9 @@
       "@components/*": [
         "components/*"
       ],
+      "@sveltes/*": [
+        "sveltes/*"
+      ],
       "@react-components/*": [
         "react-components/*"
       ],
