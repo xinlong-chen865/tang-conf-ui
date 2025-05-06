@@ -1,8 +1,9 @@
 <script lang="ts">
-    import { api, loginWithTokenResponse } from "@utils/api";
+  import { api, loginWithTokenResponse } from "@utils/api";
   import Form from "@sveltes/Form.svelte";
   import type { User } from "@utils/stores";
   import { activeUserIndex, users } from "@utils/stores";
+  import { fadeScale } from "@utils/transitions";
 
   let navUsers: User[] = [];
   let totpToken = "";
